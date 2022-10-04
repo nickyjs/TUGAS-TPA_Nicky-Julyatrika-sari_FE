@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-your-BMI-Now</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">  
+        <h1 class="heading"><b>Check your BMI</b></h1>
+        <h4>Enter your weight and height below to check your BMI results</h4>
+        <label>
+            <input id="h-input" type="number" placeholder="Height(cm)">
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Weight(kg)">
+        </label>            
+        <button type="submit" onclick="Calculate()"><b>Calculate BMI</b></button>
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+        <div id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+        <div id="bmi-status"></div>
+        </div>   
+    </div>
+    
+</body>
+</html>
