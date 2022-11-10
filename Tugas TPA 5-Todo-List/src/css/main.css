@@ -1,0 +1,183 @@
+/* @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"); */
+
+html {
+  line-height: 1.15;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: georgia;
+}
+
+body {
+  background: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.App {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App h1 {
+  display: inline;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #00008B;
+  text-shadow : #1E90FF -2px 0, #FF00FF 2px 0;
+
+  /* text-shadow: 0 0 5px #433aa8, 3px -1px 5px #271c6c; */
+}
+
+.addTodos {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  min-width: 240px;
+  width: 150px;
+
+  max-height: 40px;
+  background-color: #e1ebfd;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  align-self: center;
+}
+.todo-input:focus {
+  outline: none;
+}
+
+.add-btn {
+  margin-left: 16px;
+  background-color: #87CEEB;
+  color: #000000;
+  border-radius: 5px;
+  font-size: 8px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:focus {
+  outline: none;
+}
+
+.displaytodos {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.displaytodos .buttons {
+  margin-bottom: 32px;
+
+}
+
+.displaytodos .buttons button {
+  padding: 8px 19.2px;
+  border-radius: 20px;
+  background-color :#87CEEB;
+  color : #000000;
+  border: none;
+}
+
+.displaytodos .buttons button:focus {
+  outline: none;
+}
+
+.displaytodos .buttons button:not(:last-child) {
+  margin-right: 16px;
+}
+
+.displaytodos ul {
+  list-style: none;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e1ebfd;
+  margin: 30px 30px 30px 30px;
+  height: 140px;
+  width: 280px;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+}
+
+.card textarea {
+  padding: px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e1ebfd;
+  color: #000000;
+  height: 70%;
+}
+.card textarea:disabled {
+  background-color: transparent;
+}
+
+.card .btns {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.card .btns button {
+  border-radius: 20%;
+  border: none;
+  margin: 0 16px;
+  font-size: 10px;
+  /* cursor: pointer; */
+  color: #000000;
+  background-color: transparent;
+}
+
+.card .btns button:focus {
+  outline: none;
+}
+
+.completed {
+  position: absolute;
+  right: 110px;
+  top: 15px;
+  background-color: #87CEEB;
+  color: #000000;
+  font-size: 13px;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+
+@media Screen and (max-width: 640px) {
+  .displaytodos {
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  .displaytodos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    align-self: center;
+  }
+  .card {
+    margin-right: 0;
+  }
+}
